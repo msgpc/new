@@ -1,0 +1,6 @@
+pyrogram
+tgcrypto
+requests
+bs4
+cloudscraper
+html5lib
