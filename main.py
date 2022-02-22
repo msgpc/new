@@ -38,7 +38,9 @@ async def fwdrmv(c, m):
              caption = f"**{m.caption}**" 
     else:
              None
-    caption = caption.discard(str("@Pulikesi_Meme - "))
+    caption = caption.replace("@Pulikesi_Meme - ","")
+    caption = caption.replace(".mkv","")
+    caption = caption.replace("#","")
     caption = caption.replace("UNTOUCHED","#UNTOUCHED")
     caption = caption.replace("HEVC","#HEVC")
     caption = caption + "\n\n**📥 JOIN : @Pulikesi_Meme**"
