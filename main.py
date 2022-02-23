@@ -38,8 +38,8 @@ async def fwdrmv(c, m):
              caption = f"**{m.caption}**" 
     else:
              None
-    if('t.me' in caption):
-        caption = caption.remove('t.me')
+    if('@MSPmoviesOffl' in caption):
+        caption = caption.replace("📥 JOIN : @MSPmoviesOffl","📥 JOIN : @Pulikesi_Meme")
     else:
         caption = caption.replace("@Pulikesi_Meme - ","")
         caption = caption.replace(".mkv","")
