@@ -39,7 +39,7 @@ async def fwdrmv(c, m):
     else:
              None
     for i in caption:
-        if('@' in i or 't.me' in i):
+        if('t.me' in i):
             caption = caption.replace(i,"@Pulikesi_Meme")
         else:
             caption = caption.replace("@Pulikesi_Meme - ","")
