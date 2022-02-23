@@ -39,7 +39,7 @@ async def fwdrmv(c, m):
     else:
              None
     if('t.me' in caption):
-        caption = caption.replace('t.me',"@Pulikesi_Meme")
+        caption = caption.remove('t.me')
     else:
         caption = caption.replace("@Pulikesi_Meme - ","")
         caption = caption.replace(".mkv","")
