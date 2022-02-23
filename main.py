@@ -47,7 +47,7 @@ async def fwdrmv(c, m):
             caption = caption.replace("HEVC","#HEVC")
             caption = caption + "\n\n**📥 JOIN : @Pulikesi_Meme**"
     try:
-        if m.media:
+        if (m.document | m.video | m.audio ):
             await m.copy(m.chat.id, caption)
             await m.delete()
         else:
