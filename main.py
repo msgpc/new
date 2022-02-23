@@ -38,12 +38,14 @@ async def fwdrmv(c, m):
              caption = f"**{m.caption}**" 
     else:
              None
-    caption = caption.replace("@Pulikesi_Meme - ","")
-    caption = caption.replace(".mkv","")
-    caption = caption.replace("#","")
-    caption = caption.replace("UNTOUCHED","#UNTOUCHED")
-    caption = caption.replace("HEVC","#HEVC")
-    caption = caption + "\n\n**📥 JOIN : @Pulikesi_Meme**"
+    for i in caption:
+        if('@' in i or 't.me' in i):
+            caption.replace(i,"@Pulikesi_Meme")
+        else:
+            caption = caption.replace("@Pulikesi_Meme - ","")
+            caption = caption.replace(".mkv","")
+            caption = caption.replace("HEVC","#HEVC")
+            caption = caption + "\n\n**📥 JOIN : @Pulikesi_Meme**"
     try:
         if m.media and not (m.video_note or m.sticker):
             await m.copy(m.chat.id, caption)
