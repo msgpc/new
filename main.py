@@ -46,6 +46,7 @@ async def fwdrmv(c, m):
         caption = caption.replace("#","")
         caption = caption.replace("UNTOUCHED","#UNTOUCHED")
         caption = caption.replace("HEVC","#HEVC")
+        caption = caption.replace("Sample video.","#SampleVideo")
         caption = caption + "\n\n**📥 JOIN : @Pulikesi_Meme**"    
     try:
         if m.media and not m.sticker:
