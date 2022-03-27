@@ -6,3 +6,6 @@ A simple Telegram bot to remove forward tag from forwarded messages, also works 
 # Deploy to Heroku:
 <p align="left"><a href="https://heroku.com/deploy"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
 
+### Deploy Now:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/pulikesimeme/forwardtagremoverpm)
+
