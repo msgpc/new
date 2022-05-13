@@ -1,13 +1,14 @@
 import os, asyncio
 from pyrogram import Client, filters
+from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait
 
 bot = Client(
     "Remove FwdTag",
-    bot_token = os.environ["BOT_TOKEN"],
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"]
+    bot_token = Config.BOT_TOKEN,
+    api_id = Config.API_ID,
+    api_hash = Config.API_HASH,
 )
 
 
