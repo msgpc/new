@@ -6,9 +6,9 @@ from pyrogram.errors import FloodWait
 
 bot = Client(
     "Remove FwdTag",
-    bot_token = Config.BOT_TOKEN,
-    api_id = Config.API_ID,
-    api_hash = Config.API_HASH,
+    bot_token = os.environ["BOT_TOKEN"],
+    api_id = int(os.environ["API_ID"]),
+    api_hash = os.environ["API_HASH"]
 )
 
 
@@ -43,6 +43,8 @@ async def fwdrmv(c, m):
         caption = caption.replace("📥 JOIN : @MSPmoviesOffl","📥 JOIN : @Pulikesi_Meme")
     else:
         caption = caption.replace("@Pulikesi_Meme - ","")
+        caption = caption.replace("@Pulikesi_Meme -","")
+        caption = caption.replace("@Pulikesi_Meme ","")
         caption = caption.replace(".mkv","")
         caption = caption.replace("#","")
         caption = caption.replace("UNTOUCHED","#UNTOUCHED")
