@@ -42,9 +42,9 @@ async def fwdrmv(c, m):
     if('@MSPmoviesOffl' in caption):
         caption = caption.replace("📥 JOIN : @MSPmoviesOffl","📥 JOIN : @TamilPrime_LinkZz")
     else:
-        caption = caption.replace("@Pulikesi_Meme - ","")
-        caption = caption.replace("@Pulikesi_Meme -","")
-        caption = caption.replace("@Pulikesi_Meme ","")
+        caption = caption.replace("@TamilMob_LinkZz - ","")
+        caption = caption.replace("@TamilMob_LinkZz -","")
+        caption = caption.replace("@TamilMob_LinkZz ","")
         caption = caption.replace(".mkv","")
         caption = caption.replace("#","")
         caption = caption.replace("UNTOUCHED","#UNTOUCHED")
